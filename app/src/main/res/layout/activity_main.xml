@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Network Download Limit"
+        android:textColor="#EEEEEE"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap a tile to apply instantly"
+        android:textColor="#888888"
+        android:textSize="13sp"
+        android:layout_marginBottom="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ℹ️ Requires ADB permission on first use:\nadb shell pm grant com.woo.netlimit android.permission.WRITE_SECURE_SETTINGS"
+        android:textColor="#555555"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:background="#1E1E1E"
+        android:padding="10dp"
+        android:layout_marginTop="24dp"
+        android:lineSpacingMultiplier="1.4"/>
+
+</LinearLayout>
